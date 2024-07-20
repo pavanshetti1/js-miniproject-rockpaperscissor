@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.heading{
+    min-height:60px;
+    /* width:100%; */
+    background-color: #4535C1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3rem;
+    color:#77E4C8;
+}
+
+.game_container{
+    display:flex;
+    height:60vmin;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:50px;
+    /* background-color:#36C2CE; */
+}
+
+img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:10px solid transparent;
+}
+
+img:hover{
+    border:10px solid #F27BBD;
+}
+.score_text{
+    display:flex;
+    justify-content: center;
+    gap:60px;   
+    font-size:1.2rem;
+}
+
+.score_text *, .score_text * b{
+    text-align:center;
+    font-size:2rem;
+}
+
+.win_container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+
+.win_text_container{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    /* max-Width:400px; */
+    /* min-height:10px; */
+}
+
+.win_text{
+    padding:1rem;
+    /* text-align:center; */
+    background-color:green;
+    border-radius: 20px;
+    color:white;
+    font-weight:800;
+}
+.loose_text{
+    padding:1rem;
+    /* text-align:center; */
+    background-color:red;
+    border-radius: 20px;
+    color:white;
+    font-weight:800;
+}
+
+.display_text{
+    padding:1rem;
+    /* text-align:center; */
+    background-color:blue;
+    border-radius: 20px;
+    color:white;
+    font-weight:800;
+}
+
+.hidden{
+    display:none;
+}
+
+@media(max-width:1024px  ) {
+    .game_container{
+        gap:30px;
+    }
+    img{
+        width:150px;
+        height:150px;
+    }
+    .win_text_container{
+        font-size:1.5rem;
+    }
+}
+
+@media(max-width:768px){
+    .heading{
+        font-size:1rem;
+    }
+    .game_container{
+        margin-top:30px;
+        height:70vmin;
+        gap:10px;
+    }
+
+    img{
+        width:100px;
+        height:100px;
+    }
+    .win_text_container{
+        font-size:1.1rem;
+    }
+}
